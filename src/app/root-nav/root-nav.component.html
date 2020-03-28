@@ -1,0 +1,44 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar class="tittle">Director Panel</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="['dashboard']">Dashboard</a>
+      <a mat-list-item [routerLink]="['settings']">Settings</a>
+      <a mat-list-item [routerLink]="['tender']">Tender Module</a>
+      <a mat-list-item [routerLink]="['itb']">ITB Module</a>
+      <a mat-list-item href="">Quotation Module </a>
+      <a mat-list-item [routerLink]="['quotation']">Qoutation Sheet</a>
+      <a mat-list-item href="">Work Order</a>
+      <a mat-list-item href="">Work Done</a>
+      <a mat-list-item href="">Comparision Sheet</a>
+      <a mat-list-item href="">Invoice Module</a>
+      <a mat-list-item href="">Provisional Sales</a>
+      <a mat-list-item href="">Federal Sales</a>
+      <a mat-list-item href="">Archive</a>
+      <a mat-list-item href="">Logout</a>
+
+
+
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="white">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon class="tittle" aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span class ="tittle" id="x" >e-Invoice</span>
+    </mat-toolbar>
+
+  <ng-content></ng-content>
+  
+  </mat-sidenav-content>
+</mat-sidenav-container>

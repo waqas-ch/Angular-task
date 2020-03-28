@@ -1,0 +1,256 @@
+<div>
+   <br><span id="component-name">Settings </span>
+   <br>
+   <hr  color="orange" size=1  width="100%">
+   
+ </div>
+<div class="screen">
+<mat-horizontal-stepper class="screen" linear>
+            
+        <mat-step [stepControl]="firstFormGroup"  completed=true>
+          <form [formGroup]="firstFormGroup">
+              <ng-template matStepLabel>Step</ng-template>
+           
+               <mat-grid-list cols="2" rowHeight="7:1">
+                        <mat-grid-tile>
+                                        <mat-label id="heading">Basic Information:</mat-label>
+
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                                      
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                                <mat-form-field>
+                           <mat-label class="labels">Serial Number</mat-label>
+                                                 <input matInput placeholder="Enter Serial Number" formControlName="name" required>
+                                   
+                                  </mat-form-field>
+                               
+                        </mat-grid-tile>
+                        <mat-grid-tile>   
+                                  <mat-form-field>     
+                                  <mat-label class="labels">Date of Advertisement</mat-label>
+                               <input matInput placeholder="DD/MM/YYYY" formControlName="name" required>
+                               
+                                          
+                               </mat-form-field>
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                                        <mat-form-field>     
+                                                        <mat-label class="labels">Work Title</mat-label>
+                                                     <input matInput placeholder="Enter Work Title" formControlName="name" required>
+                                                                
+                                                     </mat-form-field>
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                                        <mat-form-field>     
+                                                        <mat-label class="labels">Type Of Work</mat-label>
+                                                     <input matInput placeholder="Enter Type of Work" formControlName="name" required>
+                                                                
+                                                     </mat-form-field>
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                                        <mat-form-field>     
+                                                        <mat-label class="labels">Clients Name</mat-label>
+                                                     <input matInput placeholder="Enter Clients Name" formControlName="name" required>
+                                                                
+                                                     </mat-form-field>
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                                        <mat-form-field>     
+                                                        <mat-label class="labels">Project Location</mat-label>
+                                                        <select matNativeControl required>
+                                                                        <option value="volvo">Project Location</option>
+                                                                        <option value="saab">RWP</option>
+                                                                        <option value="mercedes">PWD</option>
+                                                                        <option value="audi">hehe</option>
+                                                                      </select>          
+                                                     </mat-form-field>
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                                        <mat-form-field>     
+                                                        <p class="labels">PEC Category</p>
+                                                        <select class="selector" matNativeControl required>
+                                                                        <option value="volvo">PEC Category</option>
+                                                                        <option value="saab">RWP</option>
+                                                                        <option value="mercedes">PWD</option>
+                                                                        <option value="audi">hehe</option>
+                                                                      </select>           
+                                                     </mat-form-field>
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                           <button id="but" mat-flat-button mat-button >Attach Files</button>
+                           <p class="labels">  No attached files:</p>
+
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                         
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                                        <button id="but" mat-flat-button mat-button matStepperNext>Next</button>
+                        </mat-grid-tile>
+                      </mat-grid-list>
+ 
+          
+                   
+        
+    
+               
+          </form>
+        
+        </mat-step>
+
+        <mat-step [stepControl]="secondFormGroup"  completed=true>
+                <form [formGroup]="secondFormGroup">
+                                <ng-template matStepLabel>Step</ng-template>
+                              
+                                 <mat-grid-list cols="2" rowHeight="6:1">
+                                                <mat-grid-tile>
+                                                                <mat-label id="heading">Refundable Bid Bond Fee:</mat-label>
+
+                                                </mat-grid-tile>
+                                                <mat-grid-tile>
+                                                                <mat-label id="heading">Tender Doc Fee:</mat-label>
+
+                                                </mat-grid-tile>
+
+                                          <mat-grid-tile>
+                                                  <mat-form-field>
+                                             <mat-label class="labels">Fee:</mat-label>
+                                                                   <input matInput placeholder="Enter Fee" formControlName="name1" required>
+                                                     
+                                                    </mat-form-field>
+                                                 
+                                          </mat-grid-tile>
+                                          <mat-grid-tile>   
+                                                    <mat-form-field>     
+                                                    <mat-label class="labels">Fee:</mat-label>
+                                                 <input matInput placeholder="Enter Fee" formControlName="name1" required>
+                                                 
+                                                            
+                                                 </mat-form-field>
+                                          </mat-grid-tile>
+                                          <mat-grid-tile>
+                                                          <mat-form-field>     
+                                                                          <mat-label class="labels">Shape:</mat-label>
+                                                                       <input matInput placeholder="Enter Shape" formControlName="name1" required>
+                                                                                  
+                                                                       </mat-form-field>
+                                          </mat-grid-tile>
+                                          <mat-grid-tile>
+                                                          <mat-form-field>     
+                                                                          <mat-label class="labels">Shape</mat-label>
+                                                                       <input matInput placeholder="Enter Shape" formControlName="name1" required>
+                                                                                  
+                                                                       </mat-form-field>
+                                          </mat-grid-tile>
+                                          <mat-grid-tile>
+                                                          <mat-form-field>     
+                                                                          <mat-label class="labels">In Favor</mat-label>
+                                                                       <input matInput placeholder="Enter in Favor" formControlName="name1" required>
+                                                                                  
+                                                                       </mat-form-field>
+                                          </mat-grid-tile>
+                                          <mat-grid-tile>
+                                                          <mat-form-field>     
+                                                                          <mat-label class="labels">Favor</mat-label>
+                                                                          <input matInput placeholder="Enter in Favor" formControlName="name1" required>
+                                                                              
+                                                                       </mat-form-field>
+                                          </mat-grid-tile>
+                                          <mat-grid-tile>
+                                           
+                                          </mat-grid-tile>
+                                          <mat-grid-tile>
+                                                        <div>
+                                                                        <button id="but" mat-flat-button mat-button matStepperPrevious>Back</button>
+                                                                        <button id="but" mat-flat-button mat-button matStepperNext>Next</button>
+                                                                      </div>                                          </mat-grid-tile>
+                                        </mat-grid-list>
+                   
+                     
+                    </form>   
+           
+        </mat-step>
+        <mat-step [stepControl]="thirdFormGroup"  completed=false>
+                <form [formGroup]="thirdFormGroup">
+                                <ng-template matStepLabel>Step</ng-template>
+                                
+                                 <mat-grid-list cols="2" rowHeight="6:1">
+                                                <mat-grid-tile>
+                                                                <mat-label id="heading">Doc Submission On:</mat-label>
+
+                                                </mat-grid-tile>
+                                                <mat-grid-tile>
+                                                                <mat-label id="heading">Doc Purchase Date and Vanue:</mat-label>
+
+                                                </mat-grid-tile> 
+                                        <mat-grid-tile>
+                                                  <mat-form-field>
+                                             <mat-label class="labels">Date</mat-label>
+                                                                   <input matInput placeholder="DD/MM/YYYY" formControlName="name2" required>
+                                                     
+                                                    </mat-form-field>
+                                                 
+                                          </mat-grid-tile>
+                                          <mat-grid-tile>   
+                                                    <mat-form-field>     
+                                                    <mat-label class="labels">Date</mat-label>
+                                                 <input matInput placeholder="DD/MM/YYYY" formControlName="name2" required>
+                                                 
+                                                            
+                                                 </mat-form-field>
+                                          </mat-grid-tile>
+                                          <mat-grid-tile>
+                                                          <mat-form-field>     
+                                                                          <mat-label class="labels">Time</mat-label>
+                                                                       <input matInput placeholder="00:00" formControlName="name2" required>
+                                                                                  
+                                                                       </mat-form-field>
+                                          </mat-grid-tile>
+                                          <mat-grid-tile>
+                                                          <mat-form-field>     
+                                                                          <mat-label class="labels">Time</mat-label>
+                                                                       <input matInput placeholder="00:00" formControlName="name2" required>
+                                                                                  
+                                                                       </mat-form-field>
+                                          </mat-grid-tile>
+                                          <mat-grid-tile>
+                                                          <mat-form-field>     
+                                                                          <mat-label class="labels">Vanue</mat-label>
+                                                                       <input matInput placeholder="Enter Vanue" formControlName="name2" required>
+                                                                                  
+                                                                       </mat-form-field>
+                                          </mat-grid-tile>
+                                          <mat-grid-tile>
+                                                          <mat-form-field>     
+                                                                          <mat-label class="labels">Vanue</mat-label>
+                                                                       <input matInput placeholder="Enter Vanue" formControlName="name2" required>
+                                                                                 
+                                                                       </mat-form-field>
+                                          </mat-grid-tile>
+                                          
+                                          
+                                          <mat-grid-tile>
+                                           
+                                          </mat-grid-tile>
+                                          <mat-grid-tile>
+                                                        <div>
+                                                                        <button id="but" mat-flat-button mat-button matStepperPrevious>Back</button>
+                                                                        <button id="but" mat-flat-button mat-button matStepperNext>Submit</button>
+                                                                      </div>
+                                          </mat-grid-tile>
+                                        </mat-grid-list>
+                       
+                    </form>   
+           
+        </mat-step>
+        
+        <mat-step label="Done" completed=false>
+             <p>You Are Done!</p>
+            
+    
+        </mat-step>
+    
+    </mat-horizontal-stepper>
+    </div>

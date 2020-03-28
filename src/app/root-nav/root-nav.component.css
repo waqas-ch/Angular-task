@@ -1,0 +1,41 @@
+.sidenav-container {
+  height: 100%;
+  background-color:#DCDCDC;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.tittle
+{
+  color: red;
+}
+#x
+{
+  margin-left: 50%;
+
+}
+#line
+{
+  margin-top: 7px;
+  padding-top: 15px;
+}
+#component-name
+{
+  margin-left: 50px;
+  padding-bottom: 1000px;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 30px;
+}

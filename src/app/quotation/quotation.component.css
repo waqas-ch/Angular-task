@@ -1,0 +1,49 @@
+.screen 
+{   background-color:white;
+    position: relative;
+    height: 100%;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding-left: 0px;
+    padding-top: 5px;
+}
+#component-name
+{
+  margin-left: 50px;
+  padding-bottom: 1000px;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+.column2
+{
+    float: left;
+    margin-left: 0%;
+}
+#heading
+{
+    color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+#but
+{
+    color:white;
+    background-color:#e62e00;
+}
+.labels
+{color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 14px;
+
+
+
+}
+.form-data
+{
+    margin-top: 30px;
+}
